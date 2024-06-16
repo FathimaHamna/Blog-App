@@ -1,10 +1,21 @@
 import Link from "next/link";
 import styles from "./homepage.module.css";
+import Featured from "@/components/featured/Featured";
+import CategoryList from "@/components/categoryList/CategoryList";
+import CardList from "@/components/cardList/CardList";
+import Menu from "@/components/menu/Menu";
 
 export default function Home() {
-  return <div>
-    <Link href="/">
-    <h1>Lorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahf Lorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkah Lorem</h1>
-    Lorem ipsum nnnnnnnnnnmhj cdjfndnncmndskfnajbksrhfkuweb chqbcqbj hcdwgqb  rg a MGFJEQJC  hdsdh.Lorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahvLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkahLorem Ipsum bdjbwjqbcqk dhfjjg djgjr skkah</Link>
-    </div>;
+  return (
+  <div className={styles.container}>
+    <Featured/>
+    <CategoryList/>
+    <div className={styles.content}>
+      <CardList/>
+      <Menu/>
+    </div>
+
+    
+  </div>
+  );
 }

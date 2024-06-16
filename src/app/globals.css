@@ -26,3 +26,45 @@ a{
     background-color: var(--bg);
     color: var(--textColor);
 }
+
+.wrapper{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rebeccapurple;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .wrapper{
+        max-width: 900px;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+
+    .wrapper{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .wrapper{
+        max-width: 500px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .wrapper{
+        max-width: 300px;
+    }
+}

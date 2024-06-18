@@ -23,7 +23,7 @@ const Navbar = () => {
         <AuthLinks/>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar
